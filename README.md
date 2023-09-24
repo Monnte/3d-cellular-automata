@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# 3D cellular automata
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Online demo:** [https://3d-cellular-automata.netlify.app/](https://3d-cellular-automata.netlify.app/)
 
-## Available Scripts
+Hello! This is a application to try out 3D Cellular Automata. Feel free to try it out and play with it. You can set seeds, change rules and more, just check the edit mode checkbox. To capture perfect render, move the camera to the position you want and then click on download render button.
 
-In the project directory, you can run:
+## App preview
 
-### `npm start`
+![App preview](/app.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Seeds file import
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The expected fomrat is a `.txt` file with the following format:
 
-### `npm test`
+```
+x y z
+x y z
+x y z
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Where `x`, `y` and `z` are integers, in range `0` to `49` as grid size is `50x50x50`.
 
-### `npm run build`
+## Features list
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Capture canvas
+- Record canvas
+- Colors
+- Camera movment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p style=>Inspired by <a href="https://softologyblog.wordpress.com/2019/12/28/3d-cellular-automata-3/">Softology Blog 3D Cellular Automata</a></p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Example renders
 
-### `npm run eject`
+<!-- image from renders -->
+**Crystal gif**
+![render1](/renders/crystal.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Crystal top | Crystal white**
+<!-- ![render2](/renders/crystal_rbg_top.png) -->
+<div style="flex justify-center items-center flex-wrap">
+<img src="/renders/crystal_rbg_top.png" width="49%">
+<img src="/renders/crystal_white.png" width="49%">
+</div>
